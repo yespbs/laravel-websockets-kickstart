@@ -7,3 +7,8 @@ factory(App\UserMessage::class, 3)->create();
 https://stackoverflow.com/questions/41728930/laravel-broadcasting-auth-always-fails-with-403-error
 
 https://docs.beyondco.de/laravel-websockets/1.0/basic-usage/ssl.html
+
+https://medium.com/@danielalvidrez/broadcasting-with-laravel-echo-vue-js-1dc0fb488e54
+
+sudo nano ~/.valet/Nginx/laravel-websockets.test
+https://docs.beyondco.de/laravel-websockets/1.0/basic-usage/ssl.html#usage-with-a-reverse-proxy-like-nginx
