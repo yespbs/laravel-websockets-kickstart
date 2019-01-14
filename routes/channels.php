@@ -16,7 +16,7 @@ Broadcast::channel('App.User.{id}', function ($user, $id) {
 });
 
 Broadcast::channel('user-message-created', function ($userMessage) {
-	logger('channel check...');
+	//logger('channel check...');
 
 	/*if( auth()->check() ){
 		$user = auth()->user();
