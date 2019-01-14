@@ -55,7 +55,7 @@ window.Echo = new Echo({
     wsHost: window.location.hostname,
     wsPort: 6001,
     wssPort: 6001,// ssl 
-    wsPath: '/ws',
+    //wsPath: '/ws',
     disableStats: true,
    // encrypted: false,// plain 
     encrypted: true,// ssl 

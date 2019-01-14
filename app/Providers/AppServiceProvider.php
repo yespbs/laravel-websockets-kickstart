@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        URL::forceScheme( env('HTTP_SCHEME', 'http') );
+        //URL::forceScheme( env('HTTP_SCHEME', 'http') );
 
         UserMessage::observe(UserMessageObserver::class);
     }
