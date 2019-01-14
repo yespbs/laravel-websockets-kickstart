@@ -3,8 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\UserMessage;
-use App\Observers\UserMessageObserver;
+use App\Message;
+use App\Observers\MessageObserver;
 use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
         //
         //URL::forceScheme( env('HTTP_SCHEME', 'http') );
 
-        UserMessage::observe(UserMessageObserver::class);
+        Message::observe(MessageObserver::class);
     }
 
     /**

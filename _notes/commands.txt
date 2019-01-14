@@ -2,7 +2,11 @@ php artisan config:cache
 
 php artisan websockets:serve --host=127.0.0.1
 
-factory(App\UserMessage::class, 3)->create();
+php artisan tinker
+
+factory(App\User::class, 10)->create();
+
+factory(App\Message::class, 1)->create();
 
 https://stackoverflow.com/questions/41728930/laravel-broadcasting-auth-always-fails-with-403-error
 
@@ -12,3 +16,4 @@ https://medium.com/@danielalvidrez/broadcasting-with-laravel-echo-vue-js-1dc0fb4
 
 sudo nano ~/.valet/Nginx/laravel-websockets.test
 https://docs.beyondco.de/laravel-websockets/1.0/basic-usage/ssl.html#usage-with-a-reverse-proxy-like-nginx
+https://pusher.com/tutorials/chat-laravel/

@@ -29,10 +29,12 @@ class User extends Authenticatable
     ];
 
     /**
-     * one to many
-     */ 
+     * A user can have many messages
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function messages()
     {
-        return $this->hasMany('App\UserMessage', 'user_id');
+        return $this->hasMany(Message::class);
     }
 }
