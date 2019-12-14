@@ -42,8 +42,6 @@ class MessageCreated implements ShouldBroadcast
     public function broadcastOn()
     {
         return new PrivateChannel('user-message-created');
-        //return new Channel('user-message-created');
-        //return new PrivateChannel('user-message-created.'.$this->userMessage->id);
     }
 
     /**
